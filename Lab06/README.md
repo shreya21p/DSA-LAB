@@ -53,7 +53,7 @@ Program to convert infix to postfix notation and evaluate postfix expressions.
 4. Exit
 
 ## Header File
-- stack.h contains the Stack class
+- Stack.h contains the Stack class
 
 ## Compilation
 ```bash
