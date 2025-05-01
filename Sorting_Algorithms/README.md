@@ -12,9 +12,10 @@ g++ main.cpp -o sorting
 ```
 
 ## Output
-Sample output of sorting numbers in ascending order using selected algorithm.
+<img width="496" alt="image" src="https://github.com/user-attachments/assets/093a710a-63e4-4b4f-ad3e-0729ad78a38b" />
+
 
 ## Author
-- Name: Shreya Pradeep
-- Roll No: [Please provide]
+- Name: P Shreya
+- Roll No: 24011101074
 - Semester: 1
