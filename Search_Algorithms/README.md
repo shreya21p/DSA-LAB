@@ -12,9 +12,11 @@ g++ main.cpp -o search
 ```
 
 ## Output
-Sample output showing successful or failed search operations.
+<img width="273" alt="image" src="https://github.com/user-attachments/assets/a90de2eb-8253-4e36-9c09-6800518b0450" />
+
 
 ## Author
-- Name: Shreya Pradeep
-- Roll No: [Please provide]
+- Name: P Shreya
+- Roll No: 24011101074
 - Semester: 1
+
