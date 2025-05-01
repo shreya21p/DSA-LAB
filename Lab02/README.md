@@ -1,16 +1,56 @@
-# Lab02: Lab Title Placeholder
+# Lab02: POINTERS AND CLASSES
 
-## Problem Statement
-_Describe the problem here._
+# Palindrome, Armstrong, and Perfect Number Checker
 
-## Input
-_Specify the input format._
+## Description
+A menu-driven C++ program to determine whether a number is a Palindrome, Armstrong, or Perfect Number using dynamic memory allocation (DMA).
 
-## Output
-_Specify the output format._
+## Features
+- Checks if a number is:
+  - Palindrome (remains same when reversed)
+  - Armstrong (sum of cubes of digits equals the number)
+  - Perfect (sum of proper divisors equals the number)
+- Uses dynamic memory allocation
+- Menu-driven interface
 
-## Approach
-_Explain the logic and steps taken._
+## Menu Options
+a. Palindrome
+b. Armstrong Number 
+c. Perfect Number 
+d. Exit
 
-## Code
-The solution is implemented in C in the file: [`lab02.cpp`](./lab02.cpp)
+## Compilation
+```bash
+g++ main.cpp -o number_checker
+
+## Usage
+```bash
+./number_checker
+
+
+#### Problem 2 CLASSES
+```markdown
+# Geometric Shape Area Calculator
+
+## Description
+A menu-driven C++ program that calculates and displays areas of various geometric shapes using classes.
+
+## Features
+- Calculates area of:
+  - Square
+  - Cube
+  - Rectangle
+  - Cuboid
+- Uses object-oriented programming
+- Menu-driven interface
+
+## Menu Options
+a) Square 
+b) Cube 
+c) Rectangle 
+d) Cuboid 
+e) Exit
+
+## Compilation
+```bash
+g++ main.cpp -o area_calculator
