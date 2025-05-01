@@ -1,16 +1,47 @@
-# Lab04: Lab Title Placeholder
+### Topic 4: LIST ADT - SINGLY LINKED LIST
 
-## Problem Statement
-_Describe the problem here._
+#### Problem 1 README.md
 
-## Input
-_Specify the input format._
+# List ADT (Singly Linked List)
 
-## Output
-_Specify the output format._
+## Description
+Implementation of List Abstract Data Type using singly linked list.
 
-## Approach
-_Explain the logic and steps taken._
+## Operations
+1. Insert Beginning
+2. Insert End
+3. Insert Position
+4. Delete Beginning
+5. Delete End
+6. Delete Position
+7. Search
+8. Display
+9. Display Reverse
+10. Reverse Link
+11. Exit
 
-## Code
-The solution is implemented in C in the file: [`lab04.cpp`](./lab04.cpp)
+## Compilation
+```bash
+g++ main.cpp -o list_adt_sll
+```
+
+
+#### Problem 2 README.md
+
+# Sorted List ADT (Singly Linked List)
+
+## Description
+Implementation of sorted List ADT with merge functionality.
+
+## Operations
+1. Insert Ascending
+2. Merge
+3. Display
+4. Exit
+
+## Header File
+- list.h contains the List class implementation
+
+## Compilation
+```bash
+g++ main.cpp -o sorted_list
