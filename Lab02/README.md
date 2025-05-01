@@ -21,16 +21,16 @@ d. Exit
 
 ## Compilation
 ```bash
-g++ main.cpp -o number_checker
-
-## Usage
-```bash
-./number_checker
+g++ main.cpp -o area_calculator
+```
 
 
-#### Problem 2 CLASSES
-```markdown
+
+
+# Problem 2 
+
 # Geometric Shape Area Calculator
+
 
 ## Description
 A menu-driven C++ program that calculates and displays areas of various geometric shapes using classes.
