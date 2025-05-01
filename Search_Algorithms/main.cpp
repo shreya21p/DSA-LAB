@@ -1,4 +1,4 @@
-
+//Program to implement linear and binary search
 #include<cstdlib>
 #include<cstdio>
 #include "sort.h"
@@ -44,6 +44,7 @@ int main(){
         }
     }
 }
+//Function to implement linear search
 void linearsearch(int *arr,int size,int key){
     for(int i=0;i<size;i++){
         if(arr[i]==key){
@@ -53,6 +54,7 @@ void linearsearch(int *arr,int size,int key){
     }
     printf("key not found\n");
 }
+//Function to implement binary search
 void binarySearch(int *arr,int size,int key){
     int low=0,high=size-1;
     while (low<=high){
