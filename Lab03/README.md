@@ -27,4 +27,4 @@ Implementation of List Abstract Data Type using array of size 5.
 
 ## Compilation
 ```bash
-g++ main.cpp -o list_adt_array
+g++ list_adt_array.cpp -o list_adt_array
