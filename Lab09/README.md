@@ -9,7 +9,7 @@ Implementation of Nene's elimination game using sequence rules.
 
 ## Compilation
 ```bash
-g++ main.cpp -o nenes_game
+g++ nenes_game.cpp -o nenes_game
 ```
 
 
@@ -25,7 +25,7 @@ Calculates each participant's advantage over the strongest other participant.
 
 ## Compilation
 ```bash
-g++ main.cpp -o strength_diff
+g++ strength_diff.cpp -o strength_diff
 ```
 
 
@@ -46,7 +46,7 @@ Implementation of Binary Search Tree ADT.
 
 ## Compilation
 ```bash
-g++ main.cpp -o bst
+g++ bst.cpp -o bst
 ```
 
 
@@ -70,5 +70,5 @@ Constructs and displays expression trees from postfix notation.
 
 ## Compilation
 ```bash
-g++ main.cpp -o expression_tree
+g++ expression_tree.cpp -o expression_tree
 ```
