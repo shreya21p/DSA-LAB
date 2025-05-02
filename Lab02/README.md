@@ -21,7 +21,7 @@ d. Exit
 
 ## Compilation
 ```bash
-g++ main.cpp -o area_calculator
+g++ pointers.cpp -o pointers
 ```
 
 
@@ -53,4 +53,4 @@ e) Exit
 
 ## Compilation
 ```bash
-g++ main.cpp -o area_calculator
+g++ area_calculator.cpp -o area_calculator
