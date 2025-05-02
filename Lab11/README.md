@@ -16,7 +16,7 @@ Implementation of Hash Table using linear probing.
 
 ## Compilation
 ```bash
-g++ main.cpp -o hash_linear
+g++ hash_linear.cpp -o hash_linear
 ```
 
 #### Problem B 
@@ -35,7 +35,7 @@ Implementation of Hash Table using quadratic probing.
 
 ## Compilation
 ```bash
-g++ main.cpp -o hash_quadratic
+g++ hash_quadratic.cpp -o hash_quadratic
 ```
 
 #### Problem C 
@@ -53,5 +53,5 @@ Implementation of Hash Table using separate chaining.
 
 ## Compilation
 ```bash
-g++ main.cpp -o hash_chaining
+g++ hash_chaining.cpp -o hash_chaining
 ```
