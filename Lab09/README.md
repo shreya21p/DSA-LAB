@@ -1,16 +1,74 @@
-# Lab09: Lab Title Placeholder
+# Topic 9: TREE ADT - BINARY SEARCH TREE
 
-## Problem Statement
-_Describe the problem here._
+# Problem A README.md
 
-## Input
-_Specify the input format._
+# Nene's Game
 
-## Output
-_Specify the output format._
+## Description
+Implementation of Nene's elimination game using sequence rules.
+
+## Compilation
+```bash
+g++ main.cpp -o nenes_game
+```
+
+
+# Problem B README.md
+# Strength Difference Calculator
+
+## Description
+Calculates each participant's advantage over the strongest other participant.
 
 ## Approach
-_Explain the logic and steps taken._
+- Finds maximum values efficiently
+- Time complexity: O(n)
 
-## Code
-The solution is implemented in C in the file: [`lab09.cpp`](./lab09.cpp)
+## Compilation
+```bash
+g++ main.cpp -o strength_diff
+```
+
+
+# Problem C README.md
+
+# Binary Search Tree ADT
+
+## Description
+Implementation of Binary Search Tree ADT.
+
+## Operations
+1. Insert
+2. Preorder
+3. Inorder
+4. Postorder
+5. Search
+6. Exit
+
+## Compilation
+```bash
+g++ main.cpp -o bst
+```
+
+
+# Problem D README.md
+
+# Expression Tree Builder
+
+## Description
+Constructs and displays expression trees from postfix notation.
+
+## Operations
+1. Postfix Expression
+2. Construct Expression Tree
+3. Preorder
+4. Inorder
+5. Postorder
+6. Exit
+
+## Header File
+- tree.h contains the Tree class
+
+## Compilation
+```bash
+g++ main.cpp -o expression_tree
+```
