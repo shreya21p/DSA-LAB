@@ -17,7 +17,7 @@ Implementation of Stack ADT using character array of size 5.
 
 ## Compilation
 ```bash
-g++ main.cpp -o stack_array
+g++ stack_array.cpp -o stack_array
 ```
 
 #### Problem B 
@@ -35,7 +35,7 @@ Implementation of Stack ADT using character singly linked list.
 
 ## Compilation
 ```bash
-g++ main.cpp -o stack_ll
+g++ stack_ll.cpp -o stack_ll
 ```
 
 
@@ -57,7 +57,7 @@ Program to convert infix to postfix notation and evaluate postfix expressions.
 
 ## Compilation
 ```bash
-g++ main.cpp -o infix_postfix
+g++ infix_postfix.cpp -o infix_postfix
 ```
 
 
@@ -78,5 +78,5 @@ Program to check if a string of parentheses is balanced.
 
 ## Compilation
 ```bash
-g++ main.cpp -o balance_checker
+g++ balance_checker.cpp -o balance_checker
 ```
