@@ -21,7 +21,7 @@ Implementation of List ADT using doubly linked list with tail pointer.
 
 ## Compilation
 ```bash
-g++ main.cpp -o list_adt_dll
+g++ list_adt_dll.cpp -o list_adt_dll
 ```
 
 
@@ -44,7 +44,7 @@ Implementation of List ADT using circular linked list.
 
 ## Compilation
 ```bash
-g++ main.cpp -o list_adt_cll
+g++ list_adt_cll.cpp -o list_adt_cll
 ```
 
 #### Problem C README.md
@@ -64,4 +64,4 @@ Implementation of round-robin CPU scheduling algorithm using circular linked lis
 
 ## Compilation
 ```bash
-g++ main.cpp -o round_robin
+g++ round_robin.cpp -o round_robin
