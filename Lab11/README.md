@@ -1,16 +1,57 @@
-# Lab11: Lab Title Placeholder
+# Topic 11: HASH ADT - HASH TABLE
 
-## Problem Statement
-_Describe the problem here._
+#### Problem A 
 
-## Input
-_Specify the input format._
+# Hash ADT (Linear Probing)
 
-## Output
-_Specify the output format._
+## Description
+Implementation of Hash Table using linear probing.
 
-## Approach
-_Explain the logic and steps taken._
+## Operations
+1. Insert
+2. Delete
+3. Search
+4. Display
+5. Exit
 
-## Code
-The solution is implemented in C in the file: [`lab11.cpp`](./lab11.cpp)
+## Compilation
+```bash
+g++ main.cpp -o hash_linear
+```
+
+#### Problem B 
+
+# Hash ADT (Quadratic Probing)
+
+## Description
+Implementation of Hash Table using quadratic probing.
+
+## Operations
+1. Insert
+2. Delete
+3. Search
+4. Display
+5. Exit
+
+## Compilation
+```bash
+g++ main.cpp -o hash_quadratic
+```
+
+#### Problem C 
+
+# Hash ADT (Separate Chaining)
+
+## Description
+Implementation of Hash Table using separate chaining.
+
+## Operations
+1. Insert
+2. Delete
+3. Search
+4. Exit
+
+## Compilation
+```bash
+g++ main.cpp -o hash_chaining
+```
