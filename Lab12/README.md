@@ -1,16 +1,55 @@
-# Lab12: Lab Title Placeholder
 
-## Problem Statement
-_Describe the problem here._
+### Topic 12: GRAPH ADT - ADJACENCY LIST AND MATRIX
 
-## Input
-_Specify the input format._
+#### Problem A README.md
 
-## Output
-_Specify the output format._
+# Graph ADT (Adjacency Matrix)
 
-## Approach
-_Explain the logic and steps taken._
+## Description
+Implementation of Graph using adjacency matrix.
 
-## Code
-The solution is implemented in C in the file: [`lab12.cpp`](./lab12.cpp)
+## Operations
+1. Insert
+2. Delete
+3. Search
+4. Display
+5. Exit
+
+## Compilation
+```bash
+g++ main.cpp -o graph_matrix
+```
+
+#### Problem B README.md
+
+# Graph ADT (Adjacency List)
+
+## Description
+Implementation of Graph using adjacency list.
+
+## Operations
+1. Insert
+2. Delete
+3. Search
+4. Display
+5. Exit
+
+## Compilation
+```bash
+g++ main.cpp -o graph_list
+```
+
+#### Problem C README.md
+
+# Graph Algorithms
+
+## Description
+Implementation of graph algorithms:
+- Prim's (MST)
+- Kruskal's (MST)
+- Dijkstra's (Shortest Path)
+
+## Compilation
+```bash
+g++ main.cpp -o graph_algorithms
+```
