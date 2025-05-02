@@ -1,7 +1,7 @@
 
 ### Topic 8: TREE ADT - BINARY TREE
 
-#### Problem A README.md
+#### Problem A 
 
 # Block Tower Problem
 
@@ -14,7 +14,7 @@ Solution to the block tower optimization problem.
 
 ## Compilation
 ```bash
-g++ main.cpp -o block_tower
+g++ block_tower.cpp -o block_tower
 ```
 
 
@@ -34,5 +34,5 @@ Implementation of Binary Tree ADT with character nodes.
 
 ## Compilation
 ```bash
-g++ main.cpp -o binary_tree
+g++ binary_tree.cpp -o binary_tree
 ```
