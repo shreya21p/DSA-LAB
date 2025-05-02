@@ -15,7 +15,7 @@ Implementation of Queue ADT using integer array of size 5.
 
 ## Compilation
 ```bash
-g++ main.cpp -o queue_array
+g++ queue_array.cpp -o queue_array
 ```
 
 # Problem B 
@@ -33,7 +33,7 @@ Implementation of Circular Queue ADT using integer array of size 5.
 
 ## Compilation
 ```bash
-g++ main.cpp -o circular_queue
+g++ circular_queue.cpp -o circular_queue
 ```
 
 # Problem C 
@@ -51,7 +51,7 @@ Implementation of Queue ADT using integer linked list.
 
 ## Compilation
 ```bash
-g++ main.cpp -o queue_ll
+g++ queue_ll.cpp -o queue_ll
 ```
 
 # Problem D 
@@ -67,4 +67,4 @@ Program to process strings with '+' symbols according to specified rules.
 
 ## Compilation
 ```bash
-g++ main.cpp -o string_processor
+g++ string_processor.cpp -o string_processor
