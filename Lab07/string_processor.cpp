@@ -1,106 +1,116 @@
-//Implement a queue using linked list
+//Program to manipulate string using queue
 #include <stdio.h>
 #include <stdlib.h>
-class Queue {
-private:
-    struct Node { 
-        int data;
-        Node* next;
-    };
+#include <string.h>
+
+// Node structure for the singly linked list
+typedef struct Node {
+    char data;
+    struct Node* next;
+} Node;
+
+// Queue structure
+typedef struct {
     Node* front;
     Node* rear;
-public:
-    Queue() {
-        front = rear = NULL;
-    }
-    void enqueue();
-    void dequeue();
-    void peek();
-    void display();
-};
-int main() {
-    Queue q;
-    int choice;
-    while (1) {
-        printf("\nQueue Menu:\n");
-        printf("1. Enqueue\n2. Dequeue\n3. Peek\n4. Display\n5. Exit\n");
-        printf("Enter choice: ");
-        scanf("%d", &choice);
-        if (choice == 1) {
-            q.enqueue();
-        } 
-        else if (choice == 2) {
-            q.dequeue();
-        } 
-        else if (choice == 3) {
-            q.peek();
-        }
-        else if (choice == 4) {
-            q.display();
-        }
-        else if (choice == 5) {
-            printf("Exiting program.\n");
-            break;
-        }
-        else {
-            printf("Invalid choice, try again.\n");
-        }
-    }
-    return 0;
-}
-// Function to insert an element into the queue
-void Queue::enqueue() {
-    int value;
-    printf("Enter integer to enqueue: ");
-    scanf("%d", &value);
+} Queue;
+
+// Function to create a new node
+Node* createNode(char data) {
     Node* newNode = (Node*)malloc(sizeof(Node));
-    if (!newNode) {
-        printf("Memory allocation failed!\n");
-        return;
-    }
-    newNode->data = value;
+    newNode->data = data;
     newNode->next = NULL;
-    if (rear == NULL) { 
-        front = rear = newNode;
-    } else {
-        rear->next = newNode;
-        rear = newNode;
-    }
-    printf("%d enqueued to queue.\n", value);
+    return newNode;
 }
-// Function to remove an element from the queue
-void Queue::dequeue() {
-    if (front == NULL) {
-        printf("Queue Underflow! Cannot dequeue.\n");
-        return;
+
+// Function to initialize the queue
+void initializeQueue(Queue* q) {
+    q->front = q->rear = NULL;
+}
+
+// Function to check if the queue is empty
+int isEmpty(Queue* q) {
+    return q->front == NULL;
+}
+
+// Function to enqueue a character
+void enqueue(Queue* q, char data) {
+    Node* newNode = createNode(data);
+    if (isEmpty(q)) {
+        q->front = q->rear = newNode;
+    } else {
+        q->rear->next = newNode;
+        q->rear = newNode;
     }
-    Node* temp = front;
-    printf("%d dequeued from queue.\n", temp->data);
-    front = front->next;
-    if (front == NULL) { 
-        rear = NULL;
+}
+
+// Function to dequeue a character
+char dequeue(Queue* q) {
+    if (isEmpty(q)) {
+        return '\0'; // Empty queue
+    }
+    Node* temp = q->front;
+    char data = temp->data;
+    q->front = q->front->next;
+    if (q->front == NULL) {
+        q->rear = NULL;
     }
     free(temp);
+    return data;
 }
-// Function to display the front element of the queue
-void Queue::peek() {
-    if (front == NULL) {
-        printf("Queue is empty.\n");
-        return;
+
+// Function to process the input string
+void processString(char* input, char* output) {
+    Queue q;
+    initializeQueue(&q);
+
+    // Temporary queue to store characters
+    Queue tempQueue;
+    initializeQueue(&tempQueue);
+
+    for (int i = 0; input[i] != '\0'; i++) {
+        if (input[i] == '+') {
+            // Remove the last non-'+' character from the queue
+            if (!isEmpty(&q)) {
+                // Dequeue all characters except the last one
+                while (q.front != q.rear) {
+                    enqueue(&tempQueue, dequeue(&q));
+                }
+                // Discard the last character
+                dequeue(&q);
+
+                // Move characters back from tempQueue to q
+                while (!isEmpty(&tempQueue)) {
+                    enqueue(&q, dequeue(&tempQueue));
+                }
+            }
+        } else {
+            // Enqueue the character
+            enqueue(&q, input[i]);
+        }
     }
-    printf("Front element: %d\n", front->data);
+
+    // Construct the output string from the queue
+    int index = 0;
+    while (!isEmpty(&q)) {
+        output[index++] = dequeue(&q);
+    }
+    output[index] = '\0'; // Null-terminate the string
 }
-// Function to display all elements in the queue
-void Queue::display() {
-    if (front == NULL) {
-        printf("Queue is empty.\n");
-        return;
-    }
-    printf("Queue elements: ");
-    Node* temp = front;
-    while (temp != NULL) {
-        printf("%d ", temp->data);
-        temp = temp->next;
-    }
-    printf("\n");
+
+int main() {
+    char input[100];
+    char output[100];
+
+    // Take input from the user
+    printf("Enter the input string: ");
+    scanf("%s", input);
+
+    // Process the input string
+    processString(input, output);
+
+    // Print the output
+    printf("Output: %s\n", output);
+
+    return 0;
 }
