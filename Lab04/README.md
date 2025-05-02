@@ -1,6 +1,6 @@
 ### Topic 4: LIST ADT - SINGLY LINKED LIST
 
-#### Problem 1 README.md
+#### Problem 1 
 
 # List ADT (Singly Linked List)
 
@@ -22,11 +22,11 @@ Implementation of List Abstract Data Type using singly linked list.
 
 ## Compilation
 ```bash
-g++ main.cpp -o list_adt_sll
+g++ list_adt_sll.cpp -o list_adt_sll
 ```
 
 
-#### Problem 2 README.md
+#### Problem 2 
 
 # Sorted List ADT (Singly Linked List)
 
@@ -44,4 +44,4 @@ Implementation of sorted List ADT with merge functionality.
 
 ## Compilation
 ```bash
-g++ main.cpp -o sorted_list
+g++ sorted_list.cpp -o sorted_list
