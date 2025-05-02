@@ -13,7 +13,7 @@ Finds minimum removals to make sequence elements distinct.
 
 ## Compilation
 ```bash
-g++ main.cpp -o distinct_seq
+g++ distinct_seq.cpp -o distinct_seq
 ```
 
 
@@ -30,7 +30,7 @@ Calculates scores for three players based on word matches.
 
 ## Compilation
 ```bash
-g++ main.cpp -o word_game
+g++ word_game.cpp -o word_game
 ```
 
 
@@ -51,5 +51,5 @@ Implementation of Priority Queue using max heap.
 
 ## Compilation
 ```bash
-g++ main.cpp -o max_heap
+g++ max_heap.cpp -o max_heap
 ```
