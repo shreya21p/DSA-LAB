@@ -1,7 +1,7 @@
 
 ### Topic 5: LIST ADT - CIRCULAR AND DOUBLY LINKED LIST
 
-#### Problem A README.md
+#### Problem A 
 
 # List ADT (Doubly Linked List with Tail)
 
@@ -25,7 +25,7 @@ g++ list_adt_dll.cpp -o list_adt_dll
 ```
 
 
-#### Problem B README.md
+#### Problem B 
 # List ADT (Circular Linked List)
 
 ## Description
@@ -47,7 +47,7 @@ Implementation of List ADT using circular linked list.
 g++ list_adt_cll.cpp -o list_adt_cll
 ```
 
-#### Problem C README.md
+#### Problem C 
 
 # Round-Robin Scheduler
 
