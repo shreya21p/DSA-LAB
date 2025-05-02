@@ -1,6 +1,6 @@
 # Topic 9: TREE ADT - BINARY SEARCH TREE
 
-# Problem A README.md
+# Problem A 
 
 # Nene's Game
 
@@ -13,7 +13,7 @@ g++ main.cpp -o nenes_game
 ```
 
 
-# Problem B README.md
+# Problem B 
 # Strength Difference Calculator
 
 ## Description
@@ -29,7 +29,7 @@ g++ main.cpp -o strength_diff
 ```
 
 
-# Problem C README.md
+# Problem C 
 
 # Binary Search Tree ADT
 
@@ -50,7 +50,7 @@ g++ main.cpp -o bst
 ```
 
 
-# Problem D README.md
+# Problem D 
 
 # Expression Tree Builder
 
