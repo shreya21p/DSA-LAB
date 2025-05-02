@@ -1,16 +1,38 @@
-# Lab08: Lab Title Placeholder
 
-## Problem Statement
-_Describe the problem here._
+### Topic 8: TREE ADT - BINARY TREE
 
-## Input
-_Specify the input format._
+#### Problem A README.md
 
-## Output
-_Specify the output format._
+# Block Tower Problem
+
+## Description
+Solution to the block tower optimization problem.
 
 ## Approach
-_Explain the logic and steps taken._
+- Mathematical solution based on tower values
+- Time complexity: O(n) per test case
 
-## Code
-The solution is implemented in C in the file: [`lab08.cpp`](./lab08.cpp)
+## Compilation
+```bash
+g++ main.cpp -o block_tower
+```
+
+
+
+# Binary Tree ADT
+
+## Description
+Implementation of Binary Tree ADT with character nodes.
+
+## Operations
+1. Insert
+2. Preorder
+3. Inorder
+4. Postorder
+5. Search
+6. Exit
+
+## Compilation
+```bash
+g++ main.cpp -o binary_tree
+```
