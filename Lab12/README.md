@@ -1,7 +1,7 @@
 
 ### Topic 12: GRAPH ADT - ADJACENCY LIST AND MATRIX
 
-#### Problem A README.md
+#### Problem A 
 
 # Graph ADT (Adjacency Matrix)
 
@@ -20,7 +20,7 @@ Implementation of Graph using adjacency matrix.
 g++ main.cpp -o graph_matrix
 ```
 
-#### Problem B README.md
+#### Problem B 
 
 # Graph ADT (Adjacency List)
 
@@ -39,7 +39,7 @@ Implementation of Graph using adjacency list.
 g++ main.cpp -o graph_list
 ```
 
-#### Problem C README.md
+#### Problem C 
 
 # Graph Algorithms
 
