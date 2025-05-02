@@ -17,7 +17,7 @@ Implementation of Graph using adjacency matrix.
 
 ## Compilation
 ```bash
-g++ main.cpp -o graph_matrix
+g++ graph_matrix.cpp -o graph_matrix
 ```
 
 #### Problem B 
@@ -36,7 +36,7 @@ Implementation of Graph using adjacency list.
 
 ## Compilation
 ```bash
-g++ main.cpp -o graph_list
+g++ graph_list.cpp -o graph_list
 ```
 
 #### Problem C 
@@ -51,5 +51,5 @@ Implementation of graph algorithms:
 
 ## Compilation
 ```bash
-g++ main.cpp -o graph_algorithms
+g++ graph_algorithms.cpp -o graph_algorithms
 ```
