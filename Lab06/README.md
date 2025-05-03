@@ -1,4 +1,3 @@
-# Lab06: Lab Title Placeholder
 
 ### Topic 6: STACK ADT - ARRAY AND LINKED LIST
 
