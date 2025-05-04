@@ -1,4 +1,4 @@
-// Program to find the advantage for the players (cstdio version)
+// Program to find the advantage for the players 
 #include <cstdio>
 
 int main() {
