@@ -1,19 +1,17 @@
-//Program to find the advantage for the players
-#include <iostream>
-#include <vector>
-using namespace std;
+// Program to find the advantage for the players (cstdio version)
+#include <cstdio>
+
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
     int t;
-    cin >> t;
+    scanf("%d", &t);
     while (t--) {
         int n;
-        cin >> n;
-        vector<int> s(n);
+        scanf("%d", &n);
+        int s[n];  // Using VLA (variable length array, allowed in some compilers)
         for (int i = 0; i < n; ++i) {
-            cin >> s[i];
+            scanf("%d", &s[i]);
         }
+
         int max1 = -1, max2 = -1;
         for (int i = 0; i < n; ++i) {
             if (s[i] > max1) {
@@ -23,14 +21,15 @@ int main() {
                 max2 = s[i];
             }
         }
+
         for (int i = 0; i < n; ++i) {
             if (s[i] == max1) {
-                cout << s[i] - max2 << " ";
+                printf("%d ", s[i] - max2);
             } else {
-                cout << s[i] - max1 << " ";
+                printf("%d ", s[i] - max1);
             }
         }
-        cout << "\n";
+        printf("\n");
     }
     return 0;
 }
