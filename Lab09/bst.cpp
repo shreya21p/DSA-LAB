@@ -1,6 +1,5 @@
-//Program to implement binary search tree
-#include <iostream>
-using namespace std;
+// Program to implement binary search tree 
+#include <cstdio>
 
 class BST {
 public:
@@ -27,45 +26,45 @@ int main() {
     int choice, value;
 
     do {
-        cout << "\nBinary Search Tree Menu\n";
-        cout << "1. Insert\n2. Preorder\n3. Inorder\n4. Postorder\n5. Search\n6. Exit\n";
-        cout << "Enter your choice: ";
-        cin >> choice;
+        printf("\nBinary Search Tree Menu\n");
+        printf("1. Insert\n2. Preorder\n3. Inorder\n4. Postorder\n5. Search\n6. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
 
         switch (choice) {
             case 1:
-                cout << "Enter value to insert: ";
-                cin >> value;
+                printf("Enter value to insert: ");
+                scanf("%d", &value);
                 tree.root = tree.insert(tree.root, value);
                 break;
             case 2:
-                cout << "Preorder Traversal: ";
+                printf("Preorder Traversal: ");
                 tree.preorder(tree.root);
-                cout << endl;
+                printf("\n");
                 break;
             case 3:
-                cout << "Inorder Traversal: ";
+                printf("Inorder Traversal: ");
                 tree.inorder(tree.root);
-                cout << endl;
+                printf("\n");
                 break;
             case 4:
-                cout << "Postorder Traversal: ";
+                printf("Postorder Traversal: ");
                 tree.postorder(tree.root);
-                cout << endl;
+                printf("\n");
                 break;
             case 5:
-                cout << "Enter value to search: ";
-                cin >> value;
+                printf("Enter value to search: ");
+                scanf("%d", &value);
                 if (tree.search(tree.root, value))
-                    cout << value << " found in the tree.\n";
+                    printf("%d found in the tree.\n", value);
                 else
-                    cout << value << " not found in the tree.\n";
+                    printf("%d not found in the tree.\n", value);
                 break;
             case 6:
-                cout << "Exiting...\n";
+                printf("Exiting...\n");
                 break;
             default:
-                cout << "Invalid choice! Please try again.\n";
+                printf("Invalid choice! Please try again.\n");
         }
     } while (choice != 6);
 
@@ -85,10 +84,10 @@ BST::Node* BST::insert(Node* root, int value) {
     if (root == nullptr)
         return createNode(value);
 
-    if (value < root→data)
-        root→left = insert(root→left, value);
-    else if (value > root→data)
-        root→right = insert(root→right, value);
+    if (value < root->data)
+        root->left = insert(root->left, value);
+    else if (value > root->data)
+        root->right = insert(root->right, value);
 
     return root;
 }
@@ -96,27 +95,27 @@ BST::Node* BST::insert(Node* root, int value) {
 // Preorder traversal (Root-Left-Right)
 void BST::preorder(Node* root) {
     if (root != nullptr) {
-        cout << root→data << " ";
-        preorder(root→left);
-        preorder(root→right);
+        printf("%d ", root->data);
+        preorder(root->left);
+        preorder(root->right);
     }
 }
 
 // Inorder traversal (Left-Root-Right)
 void BST::inorder(Node* root) {
     if (root != nullptr) {
-        inorder(root→left);
-        cout << root→data << " ";
-        inorder(root→right);
+        inorder(root->left);
+        printf("%d ", root->data);
+        inorder(root->right);
     }
 }
 
 // Postorder traversal (Left-Right-Root)
 void BST::postorder(Node* root) {
     if (root != nullptr) {
-        postorder(root→left);
-        postorder(root→right);
-        cout << root→data << " ";
+        postorder(root->left);
+        postorder(root->right);
+        printf("%d ", root->data);
     }
 }
 
@@ -124,10 +123,10 @@ void BST::postorder(Node* root) {
 bool BST::search(Node* root, int key) {
     if (root == nullptr)
         return false;
-    if (root→data == key)
+    if (root->data == key)
         return true;
-    if (key < root→data)
-        return search(root→left, key);
+    if (key < root->data)
+        return search(root->left, key);
     else
-        return search(root→right, key);
+        return search(root->right, key);
 }
