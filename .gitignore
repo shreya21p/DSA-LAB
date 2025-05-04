@@ -1,0 +1,29 @@
+# Compiled object files
+*.o
+
+# Compiled Dynamic libraries
+*.so
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug files
+*.dSYM/
+
+# Build files
+/build/
+/cmake-build*/
+
+# IDEs and editors
+.vscode/
+*.swp
+*~
+
+# Mac and Linux
+.DS_Store
